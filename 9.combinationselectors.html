@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        div p{ /*use div(space)p*/
+            background-color:yellow ;
+        }
+        div>h3{  /*use div(graterthansymoble(>)symbol)h3*/
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        div+h2{ /*use div(+)p*/
+            background-color:yellow ;
+        }
+        div~h4{ /*use div(~)h4*/
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desendent selectors (space),section lo vunna vatiki kuda style apply avutundi</h1>
+    <p>normal paragraph</p>
+    <p>normal paragraph</p>
+    <p>normal paragraph</p>
+    <p>normal paragraph</p>
+
+<div>
+    <p>div(used) paragraph</p>
+    <p>div(used) paragraph</p>
+    <p>div(used) paragraph</p>
+    <p>div(used) paragraph</p>
+<section><p>div section paragraph = #div tag lo vunna,a section lo vunna,article lo rasina, class,spam lo rasina akkada pragapgh vuntey anni select avutaii...</section> </p></section>
+   <!--div tag lo vunna ,a section lo vunna,article lo rasina, class,spam lo rasina akkada pragapgh vuntey anni select avuraii...-->
+</div>
+    <p>normal paragraph</p>
+    <p>normal paragraph</p>
+    <p>normal paragraph</p>
+    <p>normal paragraph</p>
+
+
+
+
+    <h1>Child selector(use greaterthan(>)symbol, section lo rasi vunna vatini consider cheyyadu)</h1>
+    <h3>normal heading</h3>
+    <h3>normal heading</h3>
+    <h3>normal heading</h3>
+
+    <div>
+        <h3>div heading</h3>
+        <h3>div heading</h3>
+        <h3>div heading</h3>
+        <section><h3>div heading</h3></section>
+        <h3>div heading</h3>
+    </div>
+
+    <h3>normal heading</h3>
+    <h3>normal heading</h3>
+    <h3>normal heading</h3>
+    <br>
+
+
+
+
+
+    <h1>Adjacent sibling selctor(+) div tag tharuvta vunna vatikey style apply avutundi</h1>
+    <h2>normal heading</h2>
+    <h2>normal heading</h2>
+    <h2>normal heading</h2>
+
+    <div>
+        <h2>div heading</h2>
+        <h2>div heading</h2>
+        <h2>div heading</h2>
+        <section><h2>div heading</h2></section>
+        <h2>div heading</h2>
+    </div>
+
+    <h2>normal heading</h2>
+    <h2>normal heading</h2>
+    <h2>normal heading</h2>
+
+    <div>
+        <h2>div heading</h2>
+        <h2>div heading</h2>
+        <h2>div heading</h2>
+        <section><h2>div heading</h2></section>
+        <h2>div heading</h2>
+    </div>
+
+    <h2>normal heading</h2>
+    <h2>normal heading</h2>
+    <h2>normal heading</h2>
+
+
+
+
+    <h1>General sibling selectors (~) div select avvadu migithavi anni slect avutaii</h1>
+    <h4>normal heading</h4>
+    <h2>normal heading</h4>
+    <h4>normal heading</h4>
+
+    <div>
+        <h4>div heading</h4>
+        <h4>div heading</h4>
+        <h4>div heading</h4>
+        <section><h4>div heading</h4></section>
+        <h4>div heading</h4>
+    </div>
+
+    <h4>normal heading</h4>
+    <h4>normal heading</h4>
+    <h4>normal heading</h4>
+     
+    <h4>normal heading</h4>
+    <h4>normal heading</h4>
+<div>
+    <h4>div heading</h4>
+    <h4>div heading</h4>
+</div>
+
+<h4>normal heading</h4>
+<h4>normal heading</h4>
+<h4>normal heading</h4>
+
+
+<div>
+    <h4>div heading</h4>
+    <h4>div heading</h4>
+
+</div>
+    <h4>normal heading</h4>
+    <h4>normal heading</h4>
+
+<div>
+    <h4>div heading</h4>
+    <h4>div heading</h4>
+</div>
+
+
+</body>
+</html>

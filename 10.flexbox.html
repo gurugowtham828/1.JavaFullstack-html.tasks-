@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox properties</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: yellow;
+        }
+        .container>div{
+            background-color: black;
+           
+            
+            color: whitesmoke;
+            padding: 20px;
+            margin: 20px;
+            font-size: 20px;
+        }
+        .direction {
+            display: flex;
+            background-color: coral;
+            flex-direction: row-reverse;
+            justify-content:  center;
+            /*  flex-direction:row;column;row-reverse;column-reverse;  */   
+            
+            
+        }
+        .direction>div{
+            background-color:yellow;
+            line-height: 75px;
+            width: 100px;
+            margin: 10px;
+            
+            text-align: center;
+            font-size: 30px;
+           
+            
+            
+        }
+
+        .wrap {
+            background-color: coral;
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: column;
+            flex-wrap:wrap;
+           
+        }
+        .wrap>div{
+            background-color:yellow;
+            display: flex;
+            padding: 50px;
+            margin: 8px;
+            
+        }
+
+        .flow {
+            display: flex;
+        
+            background-color: coral;
+            flex-flow:row wrap;
+           
+        }
+
+        .flow>div{
+            background-color:yellow;
+            
+            display: flex;
+            padding: 20px;
+            margin: 8px; 
+            justify-content: center;
+            width: 100px;
+            margin: 10px;
+            
+        }
+        .content{
+            display: flex;
+            background-color: coral;
+            justify-content: center;
+        }
+        .content>div{
+            background-color:yellow;
+            
+            display: flex;
+            padding: 20px;
+            margin: 8px;  
+            height: 10%;
+            width: 50px;
+            }
+        .alignitems{
+            display: flex;
+            height: 200;
+            background-color: coral;
+            align-items: stretch;
+
+        }
+        .alignitems>div{
+            background-color:yellow;
+            
+            display: flex;
+            padding: 20px;
+            margin: 8px;  
+            
+            width: 50px;
+        }
+
+        .aligncontent{
+            display: flex;
+            background-color: coral;
+            height: 250px;
+            flex-wrap:wrap;
+            overflow: scroll;
+            align-content: space-between;
+            justify-content: center;
+
+          
+
+
+        }
+        .aligncontent>div{
+            background-color:yellow;
+            width: 100px;
+            line-height: 10px;
+           
+            line-height: 75px;
+            font-size: 30px;
+            margin: 10PX;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox properties(2types)it containing<br>1.parent-properties<br>2.child-properties</h1>
+    <br>
+
+    
+    <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+<br>
+<br>
+
+
+
+
+
+    <h1>1.parent-properties</h1>
+    <h2>flex-derection:row;column;row-reverse;column-reverse</h2>
+    <div class="direction">
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    <div>box4</div>
+    <div>box5</div>
+</div>
+
+<br>
+<h2>flex-wrap:wrap;wrap-reverse;nowwrap;</h2>
+    <div class="wrap">
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    <div>box4</div>
+    <div>box5</div>
+    <div>box6</div>
+    <div>box7</div>
+</div>
+<br>
+
+<h2>flex-flow:column;rowwrap;nowrap;row;row-reverse</h2>
+
+    <div class="flow">
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    <div>box4</div>
+    <div>box5</div>
+</div>
+<br>
+
+
+<h2>justify-content:center;</h2>
+
+    <div class="content">
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    <div>box4</div>
+    <div>box5</div>
+</div>
+<br>
+
+
+<h2>align-items:flex-end;</h2>
+
+    <div class="alignitems">
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    
+</div>
+<br>
+
+<h2>align-content:spacebetween;</h2>
+
+    <div class="aligncontent">
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    
+</div>
+<br>
+
+
+</body>
+</html>
