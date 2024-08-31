@@ -3,43 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradiants</title>
+    <title> How to create Html layouts</title>
     <style>
-        div{
-            height: 200px;
-            width: 250px;
-            background-color: green;
+        *{
+            box-sizing: border-box;
         }
-        #LG {
-            background-image: linear-gradient(yellow, skyblue, green);
-            background-origin: 100%;
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color:whitesmoke
 
+    }
+    div.Hyderabadcontainer{
+        background-color: lightcoral;
+        height: 100px;
+        width: 100%;
+       
+    }
+    header{
+        color: yellow;
+        padding: 20px;
+        font-weight: 500px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: lightblue;
+        float: left;
+        height: 200%;
+        width: 100%;
+        text-align: left;
+        
+
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    a{
+        text-decoration: darkblue;
+    }
+
+    h1 {
+        background-color: lightcoral;
+        color: blue;
+        font-weight: 900;
+        padding: 40px;
+        font-size: 20;
+        text-align: center;
+        
+        
+    }
+    article{
+        background-color: aquamarine;
+        float: left;
+        padding: 3Opx;
+        height: 580px;
+        width: 350px;
+
+    }section::after{
+        content: "The temple is in a cave about 3.7 metres (12 ft) high by 9.1 metres (30 ft) long, located in back of the temple hall, by the rear pillar. There is a stairway down into the chamber and then towards the back. Jvala Narasimha is in the shape of a serpent, while Yogananda Narasimha appears sitting in meditation in yoga pose. The silver icon of Lakshmi-Narasimha is installed in the main shrine. To the right of the temple main door is a Hanuman temple.";
+       
+        background-color: cornflowerblue;
+        height: 250px;
+        height: 180px;
+    }
+    
+
+
+        
+
+
+    @media (max-width:600px){
+        nav,article{
+            width: 100%;
+            height: auto;
         }
-        #RG {
-            background-image: radial-gradient(blue, skyblue, green);
-            background-origin: 100%;
-
-        }
-        #CG {
-            background-image: conic-gradient(yellow, skyblue, orange);
-            background-origin: 100%;
-
         }
 
     </style>
+    
 </head>
 <body>
-    <h1>Gradiants 3 types</h1>
-    <h2>1.linear gradiants</h2>
-    <div id="LG"></div>
+    <div class="Hyderabadcontainer">
+    <header>Hyderabad</header>
+    </div>
+    <p>In graphic design, page layout is the arrangement of visual elements on a page. It generally involves organizational principles of composition to achieve specific communication objectives. The high-le…</p>
+    <section>
+    <nav>
+        <ol type="A">
+            <li><a href="https://images.indianexpress.com/2022/10/telangana-temple.jpg">yadagirigutta temple image</a><br></li>
+            <li><a href="https://www.bing.com/maps?osid=32149276-025f-45de-9fdb-c3199c6c9792&cp=17.589192~78.939278&lvl=16&pi=0&imgid=0a117ab3-ff33-4a55-9d1a-30956012e95a&v=2&sV=2&form=S00027"target="_blank">map</a><br></li>
+            <li><a href="">temple legend</a><br></li>
+            <li><a href="#">detils in the temple</a><br></li>
+        </ol>
+    </nav>
     
-    <h1>Gradiants </h1>
-    <h2>2.Radial gradiants</h2>
-    <div id="RG"></div>
+    <article>
+        <h2>Sri Lakshminarasimha swami temple</h2>
+        <img src="https://newsmeter.in/h-upload/2021/10/19/306417-new-project-73.jpg" height="100" width="350">
+        <p>Sri Lakshminarasimha Swamy Temple or Yadagirigutta is a popular Hindu Temple of Narasimha Swamy, an incarnation Lord Vishnu It is situated on a hillock in the Nalgonda district, Telangana, Yadagirigutta is at a distance of 6 KM from Riagir Railway station and at a distance of 13 KM from Bhongir Town and 60 kilometers from the city of Hyderabad. There will be heavy congregation of devotees / pilgrims during Saturdays, Sundays and other Public Holidays.</p>
+        <p>Every year SriSwamy vari Brahmothsavams are being performed during the months of Palgunam i.e. from Shudha Vidiya to Dwadasi for (11 ) days (normally in the of month Febrauary & March).During the Brahmothsavams cultural programs like Harikathas, Bajans, Vocal recites, Upanyasams, Bharatha Natyams and Dramas were arranged with the well known artists and Scholars from the different places.</p>
+    </article>
+</section>
 
-    <h1>Gradiants </h1>
-    <h2>3.conic gradiants</h2>
-    <div id="CG"></div>
+<footer>
+    The Sri Lakshmi Narasimha Swamy Temple (Telugu: శ్రీ లక్ష్మీ నరసింహ స్వామి వారి ఆలయం,యాదగిరిగుట్ట) or simply known as Yadadri 
+
+</footer>
+
+   
+
+
     
 </body>
 </html>
